@@ -1,0 +1,30 @@
+/* buttons */
+.boven{
+    padding: 4rem;
+}
+
+button {
+padding: 1rem 2rem;
+border: 1pt solid black;
+background-color: White;
+color: Black;
+font-size: 5rem;
+cursor: pointer;
+margin: 1rem;
+transition: background-color 0.4s;
+ font-variant: small-caps;
+font-weight: bold;
+}
+
+button:hover {
+background-color: #008CBA;
+color: white;
+border: none;
+}
+
+section:nth-child(5) article img, section:nth-child(10) article img, section:nth-child(13) article img, section:nth-child(14) article img, section:nth-child(15) article img{
+  height: auto;
+}
+section:nth-child(5) article img, section:nth-child(3) article img, section:nth-child(9) article img, section:nth-child(10) article img{
+  height: 600px;
+}

@@ -1,0 +1,20 @@
+<%- include("header"); -%>
+    <link rel="stylesheet" href="/css/home.css">
+               <img src="/images/collecties.jpg" alt="" id="coverafbeelding">
+  			<main>
+              <h1>  <em>M  HKA </em> Collecties</h1>
+
+              <p> Het Museum voor Hedendaagse Kunst Antwerpen werd in 1985 opgericht door de Vlaamse Gemeenschap. Het M HKA bouwt in vele opzichten verder op de culturele erfenis van het Internationaal Cultureel Centrum (ICC), de eerste openbare instelling voor hedendaagse kunst in België, met vooral tussen 1972 en 1981 een internationale uitstraling. Ook de collectiebasis dateert uit deze tijd, door de poging van het ICC om het gebouw met de sculpturale ingreep van de Amerikaanse kunstenaar Gordon Matta-Clark, het nu legendarische ’Office Baroque’, als kern te nemen voor een op de omgevende percelen nieuw te bouwen museum voor hedendaagse kunst. De hiervoor verzamelde kunstwerken bracht de eerste directeur, Flor Bex, mee als de startcollectie van het M HKA. Dat is daardoor gegrond in de conceptueel getinte internationale kunstscène van de jaren 1960-1970. Het verzamelbeleid richtte zich op de periode vanaf 1970, maar er werd aanvankelijk vooral gloednieuwe kunst uit de jaren ’80 en ’90 verworven. Het museum functioneerde in de praktijk vooral als een kunsthal. </p>
+
+               <p> Met het aantreden van Bart De Baere in 2002 werd een systematisch musealiseringstraject ingezet, gericht op onderzoek- en collectievorming. De collectie werd geïnventariseerd, de behouds- en beheerexpertise werd uitgebouwd, de archiefwerking werd het centrale punt van ontwikkelingsaandacht. In meer dan dertig tentoonstellingen en twee boeken zou het volgende decennium een collectiebeeld worden scherp gesteld, met als visie nu: de naoorlogse avant-garde als basis voor een omgang met de multipolaire wereld van vandaag.</p>
+
+               <p> De collectie werd drastisch geïnternationaliseerd, met een focus op Eurazië; kunstenaars uit regio’s met een nog onbekende kunstscène: Centraal- Azië, Magreb, China en India werden verworven. Tegelijk werd landelijk niet langer enkel actueel verzameld, maar werd een inhaalbeweging gemaakt naar de veronachtzaamde jaren 1960/70. Van de kernkunstenaars in Vlaanderen uit deze periode werden belangrijke ensembles uitgebouwd. Het meest spectaculair zichtbaar is dit voor Panamarenko, van wie het M HKA nu diens studiowoning en archief beheert. Er werden echter ook belangrijke museale ensembles samengebracht van kunstenaars als Fred Bervoets, Luc Deleu, Lili Dujourie, Jef Geys, Danny Matthys en Guy Mees. Parallel daaraan werd er werk gemaakt van even uitgebreide ensembles van internationale topfiguren die in de periode een belangrijke aanwezigheid in Antwerpen waren, zoals James Lee Byars, Robert Filliou, Gordon Matta-Clark, Antoni Muntadas of Orlan. Occasioneel ging M HKA ook vroeger terug, met Paul De Vree, vanwege diens sleutelrol in de visuele poëzie of Jan Cox, van wie de kern van het late werk werd verworven. </p>
+
+              <h2>Werk in de kijker <br> Panamarenko</h2>
+               <% for (let i=0; i<5; i++) { %>
+                 <section>
+                   <%- include('uitgelicht', {work: works[i], index: i}); -%>
+                 </section>
+               <% } // close forloop %>
+  			</main>
+<%- include("footer"); -%>

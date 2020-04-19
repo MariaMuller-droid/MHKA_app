@@ -1,0 +1,26 @@
+<%- include('header'); -%>
+     <link rel="stylesheet" href="/css/home.css">
+     <link rel="stylesheet" href="/css/overzicht.css">
+  <main>
+
+   <div class="boven">
+      <div class="button-group filters-button-group">
+               <button class="button is-checked filter" data-filter="*">show all</button>
+               <button class="button filter" data-filter=".tek">Tekeningen</button>
+               <button class="button filter" data-filter=".uitv">'Uitvindingen'</button>
+               <button class="button filter" data-filter=".film">Films</button>
+               <button class="button filter" data-filter=".tip">Maandelijkse Tip</button>
+      </div>
+   </div>
+<h1>Overzicht</h1>
+  <div class="grid">
+        <% for (let i=0; i<works.length; i++) { %>
+          <section>
+            <%- include('uitgelicht', {work: works[i], index: i}); -%>
+          </section>
+        <% } // close forloop %>
+  </div>
+
+  </main>
+    <script src="/js/isotope.js"></script>
+<%- include('footer'); -%>

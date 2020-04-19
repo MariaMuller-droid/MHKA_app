@@ -1,0 +1,65 @@
+
+section:nth-child(8) article img, section:nth-child(10) article img, section:nth-child(13) article img, section:nth-child(14) article img, section:nth-child(15) article img{
+  height: 600px;
+}
+
+main{
+  padding-top: 15rem;
+}
+/* images homepage met bijschrift*/
+article {
+ height: 600px;
+ width: 600px;
+ overflow: hidden;
+ position: relative;
+ margin: 2rem auto;
+}
+
+article img {
+ height: auto;
+ width: 600px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+
+.overlay a{
+  position: absolute;
+  bottom: 5rem;
+  padding: 2rem;
+  background-color: #008CBA;
+  right: 5rem;
+  color: white;
+  text-decoration: none;
+  font-size: 5rem;
+}
+
+article:hover .overlay {
+  opacity: 1;
+}
+
+h3{
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  font-size: 5rem;
+  color: white;
+}
+
+.info{
+  position: absolute;
+  top: 20rem;
+  left: 2rem;
+  font-size: 3rem;
+  color: white;
+}

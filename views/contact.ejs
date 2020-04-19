@@ -1,0 +1,33 @@
+<%- include("header"); -%>
+  <main>
+      <div class="container">
+       <h4>Info</h4>
+
+        <p>T +32 (0)3 260 99 99 <br>
+         E info@muhka.be <br>
+         www.muhka.be</p>
+
+        <h4>Stuur ons een bericht</h4>
+  <form action="">
+        <label for="fname">Voor Naam</label>
+        <input type="text" id="fname" name="firstname" placeholder="Marie">
+
+        <label for="lname">Naam</label>
+        <input type="text" id="lname" name="lastname" placeholder="Peeters">
+
+        <label for="Language">Taal</label>
+        <select id="language" name="language">
+          <option value="dutch">Nederlands</option>
+          <option value="french">Frans</option>
+          <option value="english">Engels</option>
+          <option value="german">Duits</option>
+        </select>
+
+        <label for="subject">Uw bericht</label>
+        <textarea id="subject" name="subject" placeholder="Schrijf ons..." style="height:200px"></textarea>
+
+        <input type="submit" value="verzend">
+  </form>
+</div>
+  </main>
+<%- include("footer"); -%>

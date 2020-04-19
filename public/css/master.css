@@ -1,0 +1,156 @@
+body{
+  font-family: sans-serif;
+  font-size: 1.5rem;
+}
+
+/* navigatie */
+
+nav{
+  position: fixed;
+  width: 100vw;
+  background-color: black;
+  padding: 3rem 5rem;
+  display: flex;
+  transition: .5s ease;
+  height: 10vh;
+  z-index: 1;
+}
+
+nav ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 6rem;
+  font-variant: small-caps;
+}
+
+nav ul li{
+  margin-top: 6rem;
+}
+
+.hamburger{
+  width: 10rem;
+  height: 10rem;
+  margin-left: auto;
+}
+
+.onzichtbaar{
+display: none;
+}
+
+.logo{
+  color: white;
+  text-decoration: none;
+  font-size: 7rem;
+  padding-top: 2rem;
+  font-weight: bold;
+}
+
+ul{
+  position: fixed;
+  top: 20rem;
+  right: 7rem;
+  text-align: right;
+}
+
+.menu{
+  height: 100vh;
+  background-color: #008CBA;
+}
+
+/* algemeen */
+
+h1{
+    font-size: 10rem;
+    margin-bottom: 10rem;
+}
+
+em{
+    font-weight: bold;
+}
+
+
+main{
+  padding: 5rem;
+  padding-top: 20rem;
+  min-height: 100vh;
+}
+
+#coverafbeelding{
+    width: 100vw;
+}
+
+p{
+  line-height: 3rem;
+  margin-bottom: 7rem;
+}
+
+.artiest{
+  margin-bottom: 4rem;
+}
+
+h2{
+  font-size: 7rem;
+   font-variant: small-caps;
+  font-weight: bold;
+  margin-bottom: 5rem;
+  line-height: 10rem;
+}
+
+.date{
+  font-weight: bold;
+  margin-bottom: 7rem;
+}
+
+footer{
+    height: 20rem;
+    width: 100vw;
+    background-color: black;
+    margin-top: 10rem;
+}
+
+
+/* contact */
+label{
+    font-size: 4rem;
+    font-variant: small-caps;
+}
+input[type=text], select, textarea {
+  font-size: 2.5rem;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 4rem;
+  margin-bottom: 5rem;
+  resize: vertical;
+  font-family: sans-serif;
+}
+
+input[type=submit] {
+   border: 1pt solid black;
+  padding: 2rem;
+  cursor: pointer;
+    font-weight: bold;
+    font-size: 4rem;
+    font-variant: small-caps;
+  background-color: white;
+}
+
+input[type=submit]:hover {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+}
+
+h4{
+    font-size: 6rem;
+    color: #008CBA;
+    font-variant: small-caps;
+    margin-bottom: 2rem;
+}
+
+p{
+    font-size: 3rem;
+    line-height: 5rem;
+}
