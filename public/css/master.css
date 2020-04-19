@@ -154,3 +154,8 @@ p{
     font-size: 3rem;
     line-height: 5rem;
 }
+
+footer p{
+    color: white;
+    font-size: 4rem;
+}
